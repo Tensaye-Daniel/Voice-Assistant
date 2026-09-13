@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Required for speech-to-text -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- Required to connect to the OpenAI API -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="allen"
+        android:label="Allen"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
